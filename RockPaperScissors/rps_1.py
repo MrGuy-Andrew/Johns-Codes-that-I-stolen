@@ -46,3 +46,7 @@ def instructions():
           " Paper beats rock")
     print()
     print("*** Have fun ***")
+ 
+def gameplay():
+
+ 

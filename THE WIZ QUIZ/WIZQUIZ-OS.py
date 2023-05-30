@@ -202,6 +202,8 @@ correct_answers = (
 
 def Questquest():
 
+    WIZscore = []
+
     def quest0():
         question = Question[0]
         options = Options[0]
@@ -209,9 +211,9 @@ def Questquest():
         print(options)
         userput = int(input())
         if userput == 1:
-            A = 6.666666667
+            WIZscore.append(1)
         else:
-            A = 0
+            WIZscore.append(0)
     def quest1():
         question = Question[1]
         options = Options[1]
@@ -219,9 +221,9 @@ def Questquest():
         print(options)
         userput = int(input())
         if userput == 1:
-            B = 6.666666667
+            WIZscore.append(1)
         else:
-            B = 0
+            WIZscore.append(0)
     def quest2():
         question = Question[1]
         options = Options[1]
@@ -229,9 +231,9 @@ def Questquest():
         print(options)
         userput = int(input())
         if userput == 1:
-            C = 6.666666667
+            WIZscore.append(1)
         else:
-            C = 0
+            WIZscore.append(0)
     def quest3():
         question = Question[1]
         options = Options[1]
@@ -239,9 +241,9 @@ def Questquest():
         print(options)
         userput = int(input())
         if userput == 1:
-            D = 6.666666667
+            WIZscore.append(1)
         else:
-            D = 0
+            WIZscore.append(0)
     def quest4():
         question = Question[0]
         options = Options[0]
@@ -249,9 +251,9 @@ def Questquest():
         print(options)
         userput = int(input())
         if userput == 1:
-            E = 6.666666667
+            WIZscore.append(1)
         else:
-            E = 0
+            WIZscore.append(0)
     def quest5():
         question = Question[1]
         options = Options[1]
@@ -259,9 +261,9 @@ def Questquest():
         print(options)
         userput = int(input())
         if userput == 1:
-            F = 6.666666667
+            WIZscore.append(1)
         else:
-            F = 0
+            WIZscore.append(0)
     def quest6():
         question = Question[2]
         options = Options[2]
@@ -269,9 +271,9 @@ def Questquest():
         print(options)
         userput = int(input())
         if userput == 1:
-            G = 6.666666667
+            WIZscore.append(1)
         else:
-            G = 0
+            WIZscore.append(0)
     def quest7():
         question = Question[3]
         options = Options[3]
@@ -279,9 +281,9 @@ def Questquest():
         print(options)
         userput = int(input())
         if userput == 1:
-            H = 6.666666667
+            WIZscore.append(1)
         else:
-            H = 0
+            WIZscore.append(0)
     def quest8():
         question = Question[4]
         options = Options[4]
@@ -289,9 +291,9 @@ def Questquest():
         print(options)
         userput = int(input())
         if userput == 1:
-            I = 6.666666667
+            WIZscore.append(1)
         else:
-            I = 0
+            WIZscore.append(0)
     def quest9():
         question = Question[5]
         options = Options[5]
@@ -299,9 +301,9 @@ def Questquest():
         print(options)
         userput = int(input())
         if userput == 1:
-            J = 6.666666667
+            WIZscore.append(1)
         else:
-            J = 0
+            WIZscore.append(0)
     def quest10():
         question = Question[6]
         options = Options[6]
@@ -309,9 +311,9 @@ def Questquest():
         print(options)
         userput = int(input())
         if userput == 1:
-            K = 6.666666667
+            WIZscore.append(1)
         else:
-            K = 0
+            WIZscore.append(0)
     def quest11():
         question = Question[7]
         options = Options[7]
@@ -319,9 +321,9 @@ def Questquest():
         print(options)
         userput = int(input())
         if userput == 1:
-            L = 6.666666667
+            WIZscore.append(1)
         else:
-            L = 0
+            WIZscore.append(0)
     def quest12():
         question = Question[8]
         options = Options[8]
@@ -329,9 +331,9 @@ def Questquest():
         print(options)
         userput = int(input())
         if userput == 1:
-            N = 6.666666667
+            WIZscore.append(1)
         else:
-            N = 0
+            WIZscore.append(0)
     def quest13():
         question = Question[9]
         options = Options[9]
@@ -339,9 +341,9 @@ def Questquest():
         print(options)
         userput = int(input())
         if userput == 1:
-            O = 6.666666667
+            WIZscore.append(1)
         else:
-            O = 0
+            WIZscore.append(0)
     def quest14():
         question = Question[10]
         options = Options[10]
@@ -349,9 +351,9 @@ def Questquest():
         print(options)
         userput = int(input())
         if userput == 1:
-            P = 6.666666667
+            WIZscore.append(1)
         else:
-            P = 0
+            WIZscore.append(0)
     
     quest0()
     quest1()
@@ -370,8 +372,13 @@ def Questquest():
     quest14()
 
     def WIZcal():
-        WIZfinal = A + B + C + D + E + F + G + H + I + J + K + L + N + O + P
+        WIZfinal = WIZscore[0] + WIZscore[1] + WIZscore[2] + WIZscore[3] + WIZscore[4] + WIZscore[5] + WIZscore[6] + WIZscore[7] + WIZscore[8] + WIZscore[9] + WIZscore[10] + WIZscore[11] + WIZscore[12] + WIZscore[13] + WIZscore[14]
 
-        print(f"{WIZfinal}%")
+                
+        print(f"{WIZfinal * 100}%")
+    
+    WIZcal()
     
 Questquest()
+
+
